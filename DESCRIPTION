@@ -1,15 +1,24 @@
 Package: CME.Tools
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Reusable Helper Functions for CME 2
+Version: 1.0.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Yang",
+           family = "Liu",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "yanliu@unicef.org",
+           comment = c(ORCID = "0000-0001-6557-6439"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.3.0)
+Imports: 
+    XLConnect,
+    data.table,
+    here
+VignetteBuilder: knitr    
+Suggests: 
+    knitr
