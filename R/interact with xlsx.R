@@ -1,4 +1,4 @@
-# Common tools
+# save xlsx
 
 
 # Save data -------------------------------------------------------------
@@ -25,7 +25,7 @@ save.xlsx.XLConnect <- function(file_dir = NULL,
                                 title_style = "border",
                                 ColumnWidth0 = 4000){
   # require("XLConnect")
-  options(java.parameters = "-Xmx1024m" )
+  options(java.parameters = "-Xmx4096m" )
   if(is.null(file_dir)) file_dir <- here::here("temp.xlsx")
   if(file.exists(file_dir))file.remove(file_dir)
   #Loading an Excel workbook. Both .xls and .xlsx file formats can be used.
